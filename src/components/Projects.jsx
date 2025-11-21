@@ -18,9 +18,9 @@ const Projects = () => {
   return (
     <div id="projects" className=" bg-[#ffffff] text-white py-16 sm:py-20 lg:py-24 flex flex-col px-4">
       <div className="w-full max-w-5xl mx-auto">
-        <div className="text-left mb-8 lg:mb-12">
+        <div className="text-center mb-8 lg:mb-12">
           <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e293b] mb-4">Projects</p>
-          <p className="text-[#64748b] text-sm sm:text-base lg:text-lg max-w-2xl">A showcase of my recent work and personal projects</p>
+          <p className="text-[#64748b] text-sm sm:text-base lg:text-lg text-center">A showcase of my recent work and personal projects</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
@@ -33,7 +33,7 @@ const Projects = () => {
               <p className="my-3 sm:my-4 text-[#1e293b] text-sm sm:text-base lg:text-lg">
                 A React & Tailwind web app for exploring and cooking global recipes.
               </p>
-              <button onClick={openproject1} className="text-white bg-blue-700 p-3 px-5 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
+              <button onClick={openproject1} className="text-white bg-blue-700 py-2 px-3 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
                 View Project
               </button>
             </div>
@@ -48,7 +48,7 @@ const Projects = () => {
               <p className="my-3 sm:my-4 text-[#1e293b] text-sm sm:text-base lg:text-lg">
                 A modern React & Tailwind website showcasing home decor and furniture.
               </p>
-              <button onClick={openproject2} className="text-white bg-blue-700 p-3 px-5 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
+              <button onClick={openproject2} className="text-white bg-blue-700 py-2 px-3 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
                 View Project
               </button>
             </div>
@@ -63,7 +63,7 @@ const Projects = () => {
               <p className="my-3 sm:my-4 text-[#1e293b] text-sm sm:text-base lg:text-lg">
                 A creative media agency website built with React and Tailwind CSS.
               </p>
-              <button onClick={openproject3} className="text-white bg-blue-700 p-3 px-5 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
+              <button onClick={openproject3} className="text-white bg-blue-700 py-2 px-3 rounded-xl hover:bg-blue-600 cursor-pointer transition text-base sm:text-lg" >
                 View Project
               </button>
             </div>
