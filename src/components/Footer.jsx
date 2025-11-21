@@ -3,12 +3,12 @@ import React from 'react'
 const Footer = () => {
     const newDate = new Date().getFullYear()
     return (
-        <footer className="my-8 sm:my-10 text-center text-xs sm:text-sm text-[#1e293b] pt-6 sm:pt-8 border-t border-[#c4c4c4] bg-gradient-to-r from-white via-gray-100 to-white shadow-inner">
+        <footer className="mt-8 sm:mt-10 mb-0 pb-6 text-center text-xs sm:text-sm text-white pt-6 sm:pt-8 border-t border-gray-700 bg-gray-900">
             <div className="flex flex-col items-center space-y-2 px-4">
                 <div className="flex items-center space-x-3">
-                    <span className="text-lg sm:text-xl font-semibold tracking-wide text-[#0f172a]">Karm Pandya</span>
+                    <span className="text-lg sm:text-xl font-semibold tracking-wide text-white">Karm Pandya</span>
                 </div>
-                <p className="text-xs sm:text-sm text-[#64748b]">
+                <p className="text-xs sm:text-sm text-gray-300">
                   {newDate} Karm Pandya. All rights reserved.
                 </p>
             </div>
