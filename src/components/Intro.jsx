@@ -11,7 +11,7 @@ const Intro = () => {
     }
 
     return (
-        <div id='home' className='flex flex-row justify-center items-center h-screen w-full' style={{ backgroundImage: `url(${introphoto})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div id='home' className='flex flex-row justify-center items-center h-[86vh] w-full' style={{ backgroundImage: `url(${introphoto})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
             <div className="flex flex-row justify-center items-center gap-30 px-0 text-white w-[1000px] pt-5">
 
