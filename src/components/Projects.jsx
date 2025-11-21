@@ -18,7 +18,10 @@ const Projects = () => {
   return (
     <div id="projects" className=" bg-[#ffffff] text-white py-16 sm:py-20 lg:py-24 flex flex-col px-4">
       <div className="w-full max-w-6xl mx-auto">
-        <p className="text-[#1e293b] text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center">Projects</p>
+        <div className="text-center mb-8 lg:mb-12">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e293b] mb-4">Projects</p>
+          <p className="text-[#64748b] text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">A showcase of my recent work and personal projects</p>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           {/* Project 1 */}

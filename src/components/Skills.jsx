@@ -13,6 +13,10 @@ const Skills = () => {
     return (
 
         <div id='skills' class=" flex flex-wrap justify-center gap-4 sm:gap-6 px-4 mb-10">
+            <div className="w-full max-w-6xl mx-auto text-center mb-8">
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e293b] mb-4">Skills & Technologies</p>
+                <p className="text-[#64748b] text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">Technologies I work with to bring ideas to life</p>
+            </div>
             <div className="flex flex-row flex-wrap gap-6 sm:gap-8 lg:gap-10 items-center justify-center w-full max-w-6xl mx-auto">
                 <div class="flex flex-col items-center bg-white rounded-lg shadow-xl p-3 sm:p-4 w-24 sm:w-28 hover:scale-110 cursor-pointer transition-transform hover:shadow-2xl">
                     <img src={htmllogo} alt="HTML" class="h-12 sm:h-16 hover:animate-pulse" />

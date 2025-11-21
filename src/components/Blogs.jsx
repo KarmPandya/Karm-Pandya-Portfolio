@@ -14,7 +14,10 @@ const Blogs = () => {
     return (
         <div id="blogs" className=" bg-[#ffffff] text-white py-12 sm:py-15 lg:py-20 pb-20 sm:pb-30 flex flex-col px-4">
             <div className="w-full max-w-6xl mx-auto">
-                <p className="text-[#1e293b] text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center">Blogs</p>
+                <div className="text-center mb-8 lg:mb-12">
+                    <p className="text-[#1e293b] text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Blogs</p>
+                    <p className="text-[#64748b] text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">Thoughts and insights on development and technology</p>
+                </div>
 
                 <div className="flex flex-col gap-8 sm:gap-10">
                     {/* Blog 1 */}
