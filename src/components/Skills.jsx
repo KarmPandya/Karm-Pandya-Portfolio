@@ -8,6 +8,9 @@ import reactlogo from '../assets/SkillsPhotos/react-original.svg'
 import nodejslogo from '../assets/SkillsPhotos/nodejs-original.svg'
 import expresslogo from '../assets/SkillsPhotos/express-original.svg'
 import mongodblogo from '../assets/SkillsPhotos/mongodb-original.svg'
+import typescriptlogo from '../assets/SkillsPhotos/typescript-original.svg'
+import nextjslogo from '../assets/SkillsPhotos/nextjs-original.svg'
+import postmanlogo from '../assets/SkillsPhotos/postman-original.png'
 
 const Skills = () => {
     return (
@@ -45,6 +48,11 @@ const Skills = () => {
                 </div>
 
                 <div class="flex flex-col items-center bg-white rounded-lg shadow-xl p-4 sm:p-5 w-28 sm:w-32 hover:scale-110 cursor-pointer transition-transform hover:shadow-2xl">
+                    <img src={nextjslogo} alt="Next.js" class="h-14 sm:h-18 hover:animate-pulse" />
+                    <p class="mt-2 font-bold text-blue-900 text-center text-base sm:text-lg">Next.js</p>
+                </div>
+
+                <div class="flex flex-col items-center bg-white rounded-lg shadow-xl p-4 sm:p-5 w-28 sm:w-32 hover:scale-110 cursor-pointer transition-transform hover:shadow-2xl">
                     <img src={nodejslogo} alt="Node JS" class="h-14 sm:h-18 hover:animate-pulse" />
                     <p class="mt-2 font-bold text-blue-900 text-center text-base sm:text-lg">Node JS</p>
                 </div>
@@ -59,8 +67,16 @@ const Skills = () => {
                     <p class="mt-2 font-bold text-blue-900 text-center text-base sm:text-lg">MongoDB</p>
                 </div>
 
-            </div>
+                <div class="flex flex-col items-center bg-white rounded-lg shadow-xl p-4 sm:p-5 w-28 sm:w-32 hover:scale-110 cursor-pointer transition-transform hover:shadow-2xl">
+                    <img src={typescriptlogo} alt="TypeScript" class="h-14 sm:h-18 hover:animate-pulse" />
+                    <p class="mt-2 font-bold text-blue-900 text-center text-base sm:text-lg">TypeScript</p>
+                </div>
 
+                <div class="flex flex-col items-center bg-white rounded-lg shadow-xl p-4 sm:p-5 w-28 sm:w-32 hover:scale-110 cursor-pointer transition-transform hover:shadow-2xl">
+                    <img src={postmanlogo} alt="Postman" class="h-14 sm:h-18 hover:animate-pulse" />
+                    <p class="mt-2 font-bold text-blue-900 text-center text-base sm:text-lg">Postman</p>
+                </div>
+            </div>
         </div>
 
 

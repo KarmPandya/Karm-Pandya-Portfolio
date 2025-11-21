@@ -22,15 +22,15 @@ const Blogs = () => {
                 <div className="flex flex-col gap-8 sm:gap-10">
                     {/* Blog 1 */}
                     <div className="bg-[#eeeeee] rounded-xl px-4 py-4 sm:p-6 flex flex-col">
-                        <div className="flex flex-col lg:flex-row justify-between items-center gap-2 sm:gap-6 mb-4 lg:mb-0">
-                            <div className="text-[#1e293b] flex-1 text-center lg:text-left">
+                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 sm:gap-6 mb-4 lg:mb-0">
+                            <div className="text-[#1e293b] flex-1 text-left order-2 lg:order-1">
                                 <p className="mb-2 font-bold text-sm sm:text-base">Blog On React</p>
                                 <p className="my-4 sm:my-6 text-lg sm:text-xl lg:text-2xl">
                                     🚀 7 Best Tips for React Developers to Write <br className="hidden lg:block" />
                                     Clean and Efficient Code
                                 </p>
                             </div>
-                            <div>
+                            <div className="order-1 lg:order-2">
                                 <img
                                     src={blog1photo}
                                     alt=""
@@ -38,7 +38,7 @@ const Blogs = () => {
                                 />
                             </div>
                         </div>
-                        <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
+                        <div className="flex justify-start mt-4 lg:mt-0">
                             <button
                                 onClick={openblog1}
                                 target="_blank"
@@ -51,15 +51,15 @@ const Blogs = () => {
 
                     {/* Blog 2 */}
                     <div className="bg-[#eeeeee] rounded-xl p-4 sm:p-6 flex flex-col">
-                        <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 mb-4 lg:mb-0">
-                            <div className="text-[#1e293b] flex-1 text-center lg:text-left">
+                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 sm:gap-6 mb-4 lg:mb-0">
+                            <div className="text-[#1e293b] flex-1 text-left order-2 lg:order-1">
                                 <p className="mb-2 font-bold text-sm sm:text-base">Blog On S.O.L.I.D. Principles</p>
                                 <p className="my-4 sm:my-6 text-lg sm:text-xl lg:text-2xl">
                                     🧠 Master the S.O.L.I.D. Principles: Write Cleaner <br className="hidden lg:block" />
                                     and Smarter Code!
                                 </p>
                             </div>
-                            <div>
+                            <div className="order-1 lg:order-2">
                                 <img
                                     src={blog2photo}
                                     alt=""
@@ -67,7 +67,7 @@ const Blogs = () => {
                                 />
                             </div>
                         </div>
-                        <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
+                        <div className="flex justify-start mt-4 lg:mt-0">
                             <button
                                 onClick={openblog2}
                                 target="_blank"

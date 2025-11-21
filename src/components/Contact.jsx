@@ -32,23 +32,23 @@ const Contact = () => {
                 </div>
                 <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/95 rounded-3xl shadow-2xl border border-[#e5e7eb] p-8 md:p-12 flex flex-col gap-8">
                     <header className="mb-2 text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] tracking-tight mb-1">
+                        <h2 className="text-4xl md:text-5xl font-bold text-[#1e293b] tracking-tight mb-1">
                             Contact Me
                         </h2>
-                        <p className="text-base text-[#64748b] font-medium">
+                        <p className="text-lg text-[#64748b] font-medium">
                             Let's start a conversation.
                         </p>
                     </header>
                     <form className="flex flex-col gap-4">
                         <div className="flex flex-col md:flex-row gap-3">
-                            <input type="text" placeholder="Full Name" className="flex-1 p-3 rounded-lg bg-[#f1f5f9] text-[#1e293b] border border-[#d1d5db] focus:outline-none focus:border-blue-500 shadow-sm transition" />
-                            <input type="email" placeholder="Email Address" className="flex-1 p-3 rounded-lg bg-[#f1f5f9] text-[#1e293b] border border-[#d1d5db] focus:outline-none focus:border-blue-500 shadow-sm transition" />
+                            <input type="text" placeholder="Full Name" className="flex-1 p-4 rounded-lg bg-[#f1f5f9] text-[#1e293b] text-base border border-[#d1d5db] focus:outline-none focus:border-blue-500 shadow-sm transition" />
+                            <input type="email" placeholder="Email Address" className="flex-1 p-4 rounded-lg bg-[#f1f5f9] text-[#1e293b] text-base border border-[#d1d5db] focus:outline-none focus:border-blue-500 shadow-sm transition" />
                         </div>
-                        <textarea placeholder="Your Message" rows={3} className="p-3 rounded-lg bg-[#f1f5f9] text-[#1e293b] border border-[#d1d5db] focus:outline-none focus:border-blue-500 resize-none shadow-sm transition" />
-                        <button type="submit" className="w-full md:w-auto self-start px-6 py-2 bg-blue-700 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-200 hover:cursor-pointer" > Send Message </button>
+                        <textarea placeholder="Your Message" rows={3} className="p-4 rounded-lg bg-[#f1f5f9] text-[#1e293b] text-base border border-[#d1d5db] focus:outline-none focus:border-blue-500 resize-none shadow-sm transition" />
+                        <button type="submit" className="text-lg w-full md:w-auto self-start px-4 py-3 bg-blue-700 hover:bg-blue-600 text-white rounded-xl transition-all duration-200 hover:cursor-pointer" > Send Message </button>
                     </form>
                     <div className="flex flex-col items-center gap-2 mt-1">
-                        <span className="text-[#334155] text-sm font-medium">Or connect with me:</span>
+                        <span className="text-[#334155] text-base font-medium">Or connect with me:</span>
                         <div className="flex flex-row gap-4 mt-1">
                             <button onClick={openlinkedin} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-blue-100 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-linkedin text-blue-700 text-xl"></i> </button>
                             <button onClick={opengithub} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-gray-100 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-github text-slate-800 text-xl"></i> </button>

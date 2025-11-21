@@ -11,11 +11,11 @@ const Intro = () => {
     }
 
     return (
-        <div id='home' className='flex flex-row justify-center items-start pt-16 lg:pt-20 xl:pt-24 min-h-screen h-[80vh] sm:h-[100vh] lg:h-[120vh] w-full' style={{ backgroundImage: `url(${introphoto})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div id='home' className='flex flex-row justify-center items-start pt-16 lg:pt-20 xl:pt-24 min-h-screen h-[60vh] sm:h-[80vh] lg:h-[100vh] w-full' style={{ backgroundImage: `url(${introphoto})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
             <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 px-4 sm:px-6 lg:px-8 text-white w-full max-w-6xl pt-5 mt-10">
 
-                <div className="flex flex-col items-center justify-center text-center lg:text-left lg:items-start flex-1">
+                <div className="flex flex-col items-center justify-center text-center flex-1">
                     <p className='text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold my-3 name-class animate-fade-in-up'>
                         KARM PANDYA
                     </p>
