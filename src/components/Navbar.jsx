@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-scroll";
-import cv from '../assets/Karm Pandya Resume Final Draft .pdf'
+import cv from '../assets/Karm Pandya Resume.pdf'
 import navlogo from '../assets/navlogo.jpg'
 
 const Navbar = () => {

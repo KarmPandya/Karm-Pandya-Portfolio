@@ -1,7 +1,7 @@
 import React from 'react'
 // import introphoto from '../assets/introphoto.webp'
-import introphoto from '../assets/introphoto.jpg'
-import cv from '../assets/Karm Pandya Resume Final Draft .pdf'
+import introphoto from '../assets/introphoto1.avif'
+import cv from '../assets/Karm Pandya Resume.pdf'
 import '../App.css'
 
 const Intro = () => {
@@ -11,9 +11,9 @@ const Intro = () => {
     }
 
     return (
-        <div id='home' className='flex flex-row justify-center items-center'>
+        <div id='home' className='flex flex-row justify-center items-center h-screen w-full' style={{ backgroundImage: `url(${introphoto})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
-            <div className="flex flex-row justify-center items-center gap-30 px-0 text-stone-900 h-[86vh] w-[1000px] pt-5">
+            <div className="flex flex-row justify-center items-center gap-30 px-0 text-white w-[1000px] pt-5">
 
                 <div className="flex flex-col items-center justify-center">
                     <p className='text-6xl font-bold my-3 name-class animate-fade-in-up'>
@@ -26,10 +26,6 @@ const Intro = () => {
                             Download CV
                         </button>
                     </a>
-                </div>
-
-                <div className="animate-fade-in-up">
-                    <img src={introphoto} alt="" className='h-90 w-110' />
                 </div>
 
             </div>
@@ -66,11 +62,7 @@ const Intro = () => {
                     animation: fade-in-up 1.5s ;
                 }
                 .name-class {
-                    background-image:url("https://i.pinimg.com/736x/d2/46/9f/d2469f3797aa895deb38c97b432f6028.jpg");
-                    background-size: cover;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
+                    color: white;
                 }
 
                 `}
