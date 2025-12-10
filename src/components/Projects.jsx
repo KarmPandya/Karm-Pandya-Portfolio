@@ -16,7 +16,7 @@ const Projects = () => {
     window.open("https://github.com/KarmPandya007/Scenic-React-Tailwind")
   }
   const openproject4 = () => {
-    window.open("https://book-hive-frontend-library-manageme.vercel.app/")
+    window.open("https://bookhive-library-management-portal.vercel.app/")
   }
 
   return (
