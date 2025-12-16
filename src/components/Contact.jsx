@@ -7,10 +7,10 @@ const Contact = () => {
         window.open("https://www.linkedin.com/in/karm-pandya-055ba9363/");
     }
     const opentwitter = () => {
-        window.open("https://x.com/");
+        window.open("https://x.com/KarmPandya1411");
     }
     const openinsta = () => {
-        window.open("https://www.instagram.com/karmpandya007/?hl=en");
+        window.open("https://www.instagram.com/kpandya_14/?hl=en");
     }
     const opengithub = () => {
         window.open("https://github.com/KarmPandya007");
