@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="z-30">
             <section
                 id="contact"
-                className="relative flex items-center justify-center bg-gradient-to-br from-[#f8fafc] via-[#e0e7ef] to-[#fdf2f8] py-12 px-4"
+                className="relative flex items-center justify-center bg-linear-to-br from-[#f8fafc] via-[#e0e7ef] to-[#fdf2f8] py-12 px-4"
                 style={{ minHeight: "60vh" }}
             >
                 <div className="absolute inset-0 opacity-20 pointer-events-none">
