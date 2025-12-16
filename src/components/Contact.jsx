@@ -15,6 +15,9 @@ const Contact = () => {
     const opengithub = () => {
         window.open("https://github.com/KarmPandya007");
     }
+    const openwhatsapp = () => {
+        window.open("https://wa.me/918780543490");
+    }
 
     return (
         <div className="z-30">
@@ -54,6 +57,8 @@ const Contact = () => {
                             <button onClick={opengithub} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-gray-100 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-github text-slate-800 text-xl"></i> </button>
                             <button onClick={opentwitter} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-blue-100 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-x-twitter text-gray-900 text-xl"></i> </button>
                             <button onClick={openinsta} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-pink-50 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-instagram text-pink-500 text-xl"></i>
+                            </button>
+                            <button onClick={openwhatsapp} className="rounded-full bg-white border border-[#e0e0e0] shadow-md p-3 hover:bg-green-50 hover:cursor-pointer hover:scale-115 transition"> <i className="fa-brands fa-whatsapp text-green-600 text-xl"></i>
                             </button>
                         </div>
                     </div>
