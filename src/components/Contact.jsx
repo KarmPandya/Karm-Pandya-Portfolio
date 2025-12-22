@@ -13,7 +13,7 @@ const Contact = () => {
         window.open("https://www.instagram.com/kpandya_14/?hl=en");
     }
     const opengithub = () => {
-        window.open("https://github.com/KarmPandya007");
+        window.open("https://github.com/KarmPandya007?tab=repositories");
     }
     const openwhatsapp = () => {
         window.open("https://wa.me/918780543490");
