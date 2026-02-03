@@ -1,4 +1,3 @@
-import './App.css'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import About from './components/About'
@@ -10,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
       <Intro />
       <About />

@@ -1,88 +1,74 @@
-import React from 'react'
-import blog1photo from '../assets/BlogPhotos/blog1photo.png'
-import blog2photo from '../assets/BlogPhotos/blog2photo.png'
+import React from "react";
+import blog1photo from "../assets/BlogPhotos/blog1photo.png";
+import blog2photo from "../assets/BlogPhotos/blog2photo.png";
+
+const blogs = [
+  {
+    title: "7 Best Tips for React Developers to Write Clean and Efficient Code",
+    type: "React",
+    image: blog1photo,
+    link: "https://medium.com/@karmpandya14/7-best-tips-for-react-developers-to-write-clean-and-efficient-code-b46a6c9fe7a7",
+  },
+  {
+    title: "Master the S.O.L.I.D. Principles: Write Cleaner and Smarter Code",
+    type: "Architecture",
+    image: blog2photo,
+    link: "https://medium.com/@karmpandya14/master-the-s-o-l-i-d-principles-write-cleaner-smarter-code-d1c58f04fd69",
+  },
+];
 
 const Blogs = () => {
-
-    const openblog1 = () => {
-        window.open("https://medium.com/@karmpandya14/7-best-tips-for-react-developers-to-write-clean-and-efficient-code-b46a6c9fe7a7")
-    }
-    const openblog2 = () => {
-        window.open("https://medium.com/@karmpandya14/master-the-s-o-l-i-d-principles-write-cleaner-smarter-code-d1c58f04fd69")
-    }
-
-    return (
-        <div id="blogs" className=" bg-[#ffffff] text-white py-12 sm:py-15 lg:py-20 pb-20 sm:pb-30 flex flex-col px-4">
-            <div className="w-full max-w-5xl mx-auto">
-                <div className="text-center mb-8 lg:mb-12">
-                    <p className="text-[#1e293b] text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Blogs</p>
-                    <p className="text-[#64748b] text-sm sm:text-base lg:text-lg text-center">Thoughts and insights on development and technology</p>
-                </div>
-
-                <div className="flex flex-col gap-8 sm:gap-10">
-                    {/* Blog 1 */}
-                    <div className="bg-[#eeeeee] rounded-xl px-4 py-4 sm:p-6 flex flex-col">
-                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 sm:gap-6 mb-4 lg:mb-0">
-                            <div className="text-[#1e293b] flex-1 text-left order-2 lg:order-1">
-                                <p className="mb-2 font-bold text-sm sm:text-base">Blog On React</p>
-                                <p className="my-4 sm:my-6 text-lg sm:text-xl lg:text-2xl">
-                                    🚀 7 Best Tips for React Developers to Write <br className="hidden lg:block" />
-                                    Clean and Efficient Code
-                                </p>
-                            </div>
-                            <div className="order-1 lg:order-2">
-                                <img
-                                    src={blog1photo}
-                                    alt=""
-                                    className="h-32 sm:h-40 lg:h-40 w-full sm:w-64 lg:w-72 rounded-xl object-cover"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex justify-start mt-4 lg:mt-0">
-                            <button
-                                onClick={openblog1}
-                                target="_blank"
-                                className="text-white bg-blue-700 py-2 px-4 rounded-xl hover:bg-blue-600 cursor-pointer transition text-sm sm:text-base"
-                            >
-                                Read Blog
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Blog 2 */}
-                    <div className="bg-[#eeeeee] rounded-xl p-4 sm:p-6 flex flex-col">
-                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 sm:gap-6 mb-4 lg:mb-0">
-                            <div className="text-[#1e293b] flex-1 text-left order-2 lg:order-1">
-                                <p className="mb-2 font-bold text-sm sm:text-base">Blog On S.O.L.I.D. Principles</p>
-                                <p className="my-4 sm:my-6 text-lg sm:text-xl lg:text-2xl">
-                                    🧠 Master the S.O.L.I.D. Principles: Write Cleaner <br className="hidden lg:block" />
-                                    and Smarter Code!
-                                </p>
-                            </div>
-                            <div className="order-1 lg:order-2">
-                                <img
-                                    src={blog2photo}
-                                    alt=""
-                                    className="h-32 sm:h-40 lg:h-40 w-full sm:w-64 lg:w-72 rounded-xl object-cover"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex justify-start mt-4 lg:mt-0">
-                            <button
-                                onClick={openblog2}
-                                target="_blank"
-                                className="text-white bg-blue-700 py-2 px-4 rounded-xl hover:bg-blue-600 cursor-pointer transition text-sm sm:text-base"
-                            >
-                                Read Blog
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section id="blogs" className="bg-slate-50 py-16 sm:py-20">
+      <div className="mx-auto w-full max-w-5xl px-6">
+        <div className="text-center">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+            Blogs
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            Writing and insights
+          </h2>
+          <p className="mt-4 text-base text-slate-600 sm:text-lg">
+            Notes on front-end craftsmanship, systems thinking, and developer
+            productivity.
+          </p>
         </div>
 
+        <div className="mt-10 grid gap-6">
+          {blogs.map((blog) => (
+            <div
+              key={blog.title}
+              className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm md:flex-row"
+            >
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="h-48 w-full object-cover md:h-auto md:w-60"
+              />
+              <div className="flex flex-1 flex-col justify-between gap-4 p-6">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    {blog.type}
+                  </p>
+                  <h3 className="mt-2 text-xl font-semibold text-slate-900">
+                    {blog.title}
+                  </h3>
+                </div>
+                <div>
+                  <button
+                    onClick={() => window.open(blog.link)}
+                    className="inline-flex items-center rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                  >
+                    Read Blog
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-    )
-}
-
-export default Blogs
+export default Blogs;
